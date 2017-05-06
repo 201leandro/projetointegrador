@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+.mobile-header {
+    background-color: #00695c;
+    padding: 3vh 10vw;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.mobile-header-home {
+    background-color: rgba(0,0,0,0);
+}
+
+.menu-mobile-logo{
+    margin-left: 6vw;
+    font-size: 2em;
+    vertical-align: middle;
+}
+
+.glyphicon-menu-hamburger{
+    font-size: 2em;
+    line-height: 2em;
+    display: inline;
+    vertical-align: middle;
+}
+
+.mobile-header-title{
+    font-size: 1.7em;
+    line-height: 2em;
+    display: inline;
+    vertical-align: middle;
+    margin-left: 15vw;
+}
+
+.mobile-header-title-small{
+    margin-left: 30vw;
+}
+
+.mobile-header-title-big{
+    margin-left: 12vw;
+    font-size: 1.4em;
+}
+
+.list-item-image{
+    height: 24vh;
+    margin: 0 auto;
+}
+
+.item-image{
+    height: 35vh;
+}
+
+.btn-mais{
+    width: 8vh;
+    height: 8vh;
+    background-color: #00695c;
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: -4vh;
+    line-height: 8vh;
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+}
+
+.thumb-title{
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.thumb{
+    background-color: white;
+    padding: 1vh;
+    border: 3px solid #eee;
+}
+
+.lista{
+    background: #eee;
+    padding: 4vh 1vh;
+    min-height: 80vh;
+    padding-top: 17.5vh;
+}
+
+.details{
+    background-color: white;
+    padding: 1vh;
+}
+
+.details-text{
+    padding: 0 2vh;
+    font-size: 1.3em;
+    line-height: 1.7em;
+}
+
+.details-text h1, h2, h3, h4, h5, h6{
+    margin: 1em 0;
+    line-height: 1.5em;
+    color: #00695c;
+    text-transform: uppercase;
+}
+
+.details-text p{
+    text-indent: 5vw;
+}
+
+.mobile-menu{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100vw;
+    z-index: 9999;
+    height: 100vh;
+    width: 100vw;
+    background-color: #00695c;
+}
+
+.mobile-menu ul{
+    list-style-type: none;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin-top: 30vh;
+    clear: both;
+}
+
+.mobile-menu ul hr{
+    width: 60%;
+}
+
+.mobile-menu a{
+    color: white;
+    font-size: 1.5em;
+}
+
+.close-menu{
+    color: white;
+    font-size: 3em;
+    padding: 5vh;
+    float: right;
+}
+
+.slide{
+    width: 0px;
+}
+
+.text-label{
+    color: #00695c;
+}
+
+.btn-topo{
+    width: 8vh;
+    height: 8vh;
+    background-color: #00695c;
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: -4vh;
+    line-height: 8vh;
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    position: fixed;
+    bottom: 2vh;
+    right: 2vh;
+}

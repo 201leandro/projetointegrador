@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block titulo %} {{ capim.nome_popular }} | {{ block.super }} {% endblock titulo %}
+
+{% block container %}
+
+<header class="row mobile-header">
+	<span id="menu-mobile-icon" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+	<h1 class="mobile-header-title">{{ capim.nome_popular }}</h1>
+</header>
+
+<main class="row lista">
+	<article class="col-xs-12 details">
+		{% if capim.imagem %}
+		<div class="item-image"
+			style="background-image: url({{ capim.imagem.url }});
+					background-repeat: no-repeat;
+					background-size: cover;"></div>
+
+		{% endif %}
+
+		<section class="details-text">
+			<hr>
+			<b class="text-label">Menu</b><br>
+			<ol>
+				<li><a href="#introducao">Introdução</a></li>
+				<li><a href="#caracteristicas">Características básicas</a></li>
+				<li><a href="#recomendacoes">Recomendações agronômicas</a></li>
+			</ol>
+			<hr>
+			<b class="text-label">Nome científico: </b><span>{{ capim.nome_cientifico }}</span>
+			<hr>
+			<span>{{ capim.descricao|safe }}</span>
+			<hr>
+			<b class="text-label">Responsável: </b><span>{{ capim.responsavel }}</span>
+			<hr>
+			<b class="text-label">Fonte: </b><span>{{ capim.fonte }}</span>
+		</section>
+	</article>
+</main>
+
+
+{% endblock container %}

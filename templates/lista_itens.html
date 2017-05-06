@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block titulo %} Lista | {{ block.super }} {% endblock titulo %}
+
+{% block container %}
+
+<header class="row mobile-header">
+	<span id="menu-mobile-icon" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+	<h1 class="mobile-header-title">todos os capins</h1>
+</header>
+
+<main class="row lista">
+	{% for capim in lista_capim %}
+	<article class="col-xs-6 thumb">
+		{% if capim.imagem %}
+		<a href="{{ capim.get_url }}">
+		<div class="list-item-image"
+			style="background-image: url({{ capim.imagem.url }});
+					background-repeat: no-repeat;
+					background-size: cover;"></div>
+		</a>
+		{% endif %}
+		<header class="">
+			<a class="btn-mais" href="{{ capim.get_url }}">+</a>
+			<h1 class="thumb-title">{{ capim.nome_popular }}</h1>
+		</header>
+	</article>
+	{% endfor %}
+</main>
+
+{% endblock container %}
